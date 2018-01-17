@@ -1,0 +1,181 @@
+
+bachelor
+  #get_first_name_of_season_winner
+    returns 'Tessa' when passed the data and 'season 10' (FAILED - 1)
+    returns 'Courtney' when passed the data and 'season 16' (FAILED - 2)
+    returns 'Emily' when passed the data and 'season 15' (FAILED - 3)
+  #get_contestant_name
+    returns 'Carly Waddel' when passed data and the string 'Cruise Ship Singer' (FAILED - 4)
+    returns 'Brooke Burchette' when passed data and the string 'Community Organizer' (FAILED - 5)
+    returns 'Dianna Martinez' when passed data and the string 'Nonprofit director' (FAILED - 6)
+  #count_contestants_by_hometown
+    returns 2 when passed data and the string 'New York, New York' (FAILED - 7)
+    returns 6 when passed data and the string 'Chicago, Illinois' (FAILED - 8)
+    returns 6 when passed data and the string 'San Diego, CA' (FAILED - 9)
+  #get_occupation
+    returns 'Journalist' when passed data and the string 'Cranston, Rhode Island' (FAILED - 10)
+    returns 'Critical care nurse' when passed data and the string 'Waverly, Nebraska' (FAILED - 11)
+    returns 'Health Club Manager' when passed data and the string 'Troutdale, Oregon' (FAILED - 12)
+  #get_average_age_for_season
+    returns 26 when passed the data and the string 'season 10' (FAILED - 13)
+    returns 27 when passed the data and the string 'season 11' (FAILED - 14)
+    returns 26 when passed the data and the string 'season 12' (FAILED - 15)
+
+Failures:
+
+  1) bachelor #get_first_name_of_season_winner returns 'Tessa' when passed the data and 'season 10'
+     Failure/Error: expect(get_first_name_of_season_winner(data, "season 10")).to eq("Tessa")
+
+       expected: "Tessa"
+            got: nil
+
+       (compared using ==)
+     # ./spec/bachelor_spec.rb:7:in `block (3 levels) in <top (required)>'
+
+  2) bachelor #get_first_name_of_season_winner returns 'Courtney' when passed the data and 'season 16'
+     Failure/Error: expect(get_first_name_of_season_winner(data, "season 16")).to eq("Courtney")
+
+       expected: "Courtney"
+            got: nil
+
+       (compared using ==)
+     # ./spec/bachelor_spec.rb:11:in `block (3 levels) in <top (required)>'
+
+  3) bachelor #get_first_name_of_season_winner returns 'Emily' when passed the data and 'season 15'
+     Failure/Error: expect(get_first_name_of_season_winner(data, "season 15")).to eq("Emily")
+
+       expected: "Emily"
+            got: nil
+
+       (compared using ==)
+     # ./spec/bachelor_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+  4) bachelor #get_contestant_name returns 'Carly Waddel' when passed data and the string 'Cruise Ship Singer'
+     Failure/Error: expect(get_contestant_name(data, "Cruise Ship Singer")).to eq("Carly Waddell")
+
+       expected: "Carly Waddell"
+            got: nil
+
+       (compared using ==)
+     # ./spec/bachelor_spec.rb:21:in `block (3 levels) in <top (required)>'
+
+  5) bachelor #get_contestant_name returns 'Brooke Burchette' when passed data and the string 'Community Organizer'
+     Failure/Error: expect(get_contestant_name(data, "Community Organizer")).to eq("Brooke Burchette")
+
+       expected: "Brooke Burchette"
+            got: nil
+
+       (compared using ==)
+     # ./spec/bachelor_spec.rb:25:in `block (3 levels) in <top (required)>'
+
+  6) bachelor #get_contestant_name returns 'Dianna Martinez' when passed data and the string 'Nonprofit director'
+     Failure/Error: expect(get_contestant_name(data, "Nonprofit director")).to eq("Dianna Martinez")
+
+       expected: "Dianna Martinez"
+            got: nil
+
+       (compared using ==)
+     # ./spec/bachelor_spec.rb:29:in `block (3 levels) in <top (required)>'
+
+  7) bachelor #count_contestants_by_hometown returns 2 when passed data and the string 'New York, New York'
+     Failure/Error: expect(count_contestants_by_hometown(data, "New York, New York")).to eq(4)
+
+       expected: 4
+            got: nil
+
+       (compared using ==)
+     # ./spec/bachelor_spec.rb:35:in `block (3 levels) in <top (required)>'
+
+  8) bachelor #count_contestants_by_hometown returns 6 when passed data and the string 'Chicago, Illinois'
+     Failure/Error: expect(count_contestants_by_hometown(data, "Chicago, Illinois")).to eq(8)
+
+       expected: 8
+            got: nil
+
+       (compared using ==)
+     # ./spec/bachelor_spec.rb:39:in `block (3 levels) in <top (required)>'
+
+  9) bachelor #count_contestants_by_hometown returns 6 when passed data and the string 'San Diego, CA'
+     Failure/Error: expect(count_contestants_by_hometown(data, "San Diego, California")).to eq(5)
+
+       expected: 5
+            got: nil
+
+       (compared using ==)
+     # ./spec/bachelor_spec.rb:43:in `block (3 levels) in <top (required)>'
+
+  10) bachelor #get_occupation returns 'Journalist' when passed data and the string 'Cranston, Rhode Island'
+      Failure/Error: expect(get_occupation(data, "Cranston, Rhode Island")).to eq("Journalist")
+
+        expected: "Journalist"
+             got: nil
+
+        (compared using ==)
+      # ./spec/bachelor_spec.rb:49:in `block (3 levels) in <top (required)>'
+
+  11) bachelor #get_occupation returns 'Critical care nurse' when passed data and the string 'Waverly, Nebraska'
+      Failure/Error: expect(get_occupation(data, "Waverly, Nebraska")).to eq("Critical care nurse")
+
+        expected: "Critical care nurse"
+             got: nil
+
+        (compared using ==)
+      # ./spec/bachelor_spec.rb:53:in `block (3 levels) in <top (required)>'
+
+  12) bachelor #get_occupation returns 'Health Club Manager' when passed data and the string 'Troutdale, Oregon'
+      Failure/Error: expect(get_occupation(data, "Troutdale, Oregon")).to eq("Health Club Manager")
+
+        expected: "Health Club Manager"
+             got: nil
+
+        (compared using ==)
+      # ./spec/bachelor_spec.rb:57:in `block (3 levels) in <top (required)>'
+
+  13) bachelor #get_average_age_for_season returns 26 when passed the data and the string 'season 10'
+      Failure/Error: expect(get_average_age_for_season(data, "season 10")).to eq(26)
+
+        expected: 26
+             got: nil
+
+        (compared using ==)
+      # ./spec/bachelor_spec.rb:63:in `block (3 levels) in <top (required)>'
+
+  14) bachelor #get_average_age_for_season returns 27 when passed the data and the string 'season 11'
+      Failure/Error: expect(get_average_age_for_season(data, "season 11")).to eq(27)
+
+        expected: 27
+             got: nil
+
+        (compared using ==)
+      # ./spec/bachelor_spec.rb:66:in `block (3 levels) in <top (required)>'
+
+  15) bachelor #get_average_age_for_season returns 26 when passed the data and the string 'season 12'
+      Failure/Error: expect(get_average_age_for_season(data, "season 12")).to eq(26)
+
+        expected: 26
+             got: nil
+
+        (compared using ==)
+      # ./spec/bachelor_spec.rb:69:in `block (3 levels) in <top (required)>'
+
+Finished in 0.1002 seconds (files took 0.29069 seconds to load)
+15 examples, 15 failures
+
+Failed examples:
+
+rspec ./spec/bachelor_spec.rb:6 # bachelor #get_first_name_of_season_winner returns 'Tessa' when passed the data and 'season 10'
+rspec ./spec/bachelor_spec.rb:10 # bachelor #get_first_name_of_season_winner returns 'Courtney' when passed the data and 'season 16'
+rspec ./spec/bachelor_spec.rb:14 # bachelor #get_first_name_of_season_winner returns 'Emily' when passed the data and 'season 15'
+rspec ./spec/bachelor_spec.rb:20 # bachelor #get_contestant_name returns 'Carly Waddel' when passed data and the string 'Cruise Ship Singer'
+rspec ./spec/bachelor_spec.rb:24 # bachelor #get_contestant_name returns 'Brooke Burchette' when passed data and the string 'Community Organizer'
+rspec ./spec/bachelor_spec.rb:28 # bachelor #get_contestant_name returns 'Dianna Martinez' when passed data and the string 'Nonprofit director'
+rspec ./spec/bachelor_spec.rb:34 # bachelor #count_contestants_by_hometown returns 2 when passed data and the string 'New York, New York'
+rspec ./spec/bachelor_spec.rb:38 # bachelor #count_contestants_by_hometown returns 6 when passed data and the string 'Chicago, Illinois'
+rspec ./spec/bachelor_spec.rb:42 # bachelor #count_contestants_by_hometown returns 6 when passed data and the string 'San Diego, CA'
+rspec ./spec/bachelor_spec.rb:48 # bachelor #get_occupation returns 'Journalist' when passed data and the string 'Cranston, Rhode Island'
+rspec ./spec/bachelor_spec.rb:52 # bachelor #get_occupation returns 'Critical care nurse' when passed data and the string 'Waverly, Nebraska'
+rspec ./spec/bachelor_spec.rb:56 # bachelor #get_occupation returns 'Health Club Manager' when passed data and the string 'Troutdale, Oregon'
+rspec ./spec/bachelor_spec.rb:62 # bachelor #get_average_age_for_season returns 26 when passed the data and the string 'season 10'
+rspec ./spec/bachelor_spec.rb:65 # bachelor #get_average_age_for_season returns 27 when passed the data and the string 'season 11'
+rspec ./spec/bachelor_spec.rb:68 # bachelor #get_average_age_for_season returns 26 when passed the data and the string 'season 12'
+
